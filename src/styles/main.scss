@@ -1,0 +1,168 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+html {
+    box-sizing: border-box;
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    color: #3D4F9F;
+    font: 400 15px 'Quicksand', Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.logo {
+    a {
+        width: 26px;
+        height: 26px;
+        border-radius: 50px;
+        background: #5E81FE;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 36px;
+    @media(max-width: 768px) {
+        font-size: 37px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    @media(max-width: 768px) {
+        font-size: 33px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 700;
+    @media(max-width: 768px) {
+        font-size: 26px;
+    }
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    @media(max-width: 1024px) {
+        font-size: 19px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    vertical-align: top;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    span {
+        color: #D6DAE5;
+        &:hover {
+            color: #6188FF;
+        }
+    }
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 47px;
+    @media(max-width: 768px) {
+        font-size: 19px;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    min-width: 113px;
+    height: 43px;
+    border-radius: 2px;
+    padding: 13px 20px;
+    border: none;
+    transition: box-shadow 0.3s cubic-bezier(0.5,0.15,0.5,0.85);
+    font-size: 13px;
+    font-weight: 500;
+    background: #D2E1FF;
+    color: #3A79FF;
+    cursor: pointer;
+    &:hover {
+        border-color: #e21a41;
+        box-shadow: inset 0 -5px 0 #e21a41;
+        transition: color 0.3s ease-out;
+        color: #e21a41;
+        background-position: right;
+        font-weight: 700;
+    }
+    @media(max-width: 768px) {
+        min-width: 135px;
+        height: 50px;
+        padding: 13px 10px;
+        font-size: 17px;
+    }
+}
+
+.btn-block {
+    display: flex;
+}
+
+.decor {
+    position: absolute;
+    @media(max-width: 768px) {
+        display: none;
+    }
+}
+

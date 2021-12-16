@@ -1,0 +1,76 @@
+.plan-content {
+    padding: 170px 0 30px;
+    background: #F5F8FF;
+    color: #8D96BD;
+    @media(max-width: 768px) {
+        padding: 60px 0;
+    }
+    .d-flex {
+        align-items: flex-start;
+        justify-content: flex-end;
+        @media(max-width: 768px) {
+           flex-direction: column-reverse;
+            align-items: center;
+        }
+        h2 {
+            color: #3D4F9F;
+            @media(max-width: 1024px) {
+                font-size: 30px;
+            }
+        }
+        h6 {
+            text-transform: uppercase;
+        }
+        .article-left {
+            width: 35%;
+            @media(max-width: 768px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .article-right {
+            width: 55%;
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+            img {
+                margin: -50px 0 0;
+                @media(max-width: 768px) {
+                    margin: 0;
+                }
+            }
+        }
+        .btn-block {
+            @media(max-width: 768px) {
+                width: 100%;
+                justify-content: center;
+            }
+            .btn {
+                position: relative;
+                color: #ADB4D2;
+                background: #F5F8FF;
+                border: 1px solid #D1D1E4;
+                &:hover {
+                    color: #fff;
+                    background: #4C85FF;
+                    border: 1px solid #4C85FF;
+                    box-shadow: none;
+                    span {
+                        display: block;
+                        position: absolute;
+                        display: block;
+                        top: 19px;
+                        right: 7px;
+                        font-size: 8px;
+                        @media(max-width: 768px) {
+                           top: 22px;
+                        }
+                    }
+                }
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

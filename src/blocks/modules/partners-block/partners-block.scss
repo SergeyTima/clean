@@ -1,0 +1,27 @@
+.partners-block {
+    padding: 60px 0;
+    color: #D6DAE5;
+    @media(max-width: 768px) {
+        padding: 30px 0;
+    }
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        @media(max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        li {
+            @media(max-width: 768px) {
+                margin: 0 0 35px;
+            }
+        }
+        a {
+            font-size: 20px;
+            @media(max-width: 768px) {
+               font-size: 40px;
+            }
+        }
+    }
+}
